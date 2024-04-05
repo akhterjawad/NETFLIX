@@ -20,9 +20,9 @@ body {
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
+    background-size: cover;
     position: relative;
-}
+  } 
 
 .box {
     height: 100vh;
@@ -119,8 +119,24 @@ nav>div>button {
     background-color: red;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
 
 }
+button{
+  cursor: pointer;
+  z-index: 10;
+}
+input{
+  outline: none;
+}
+/* button :hover{
+  border: 1px solid red;
+  color: red;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 2;
+} */
 
 .main input {
     background-color: #111;
@@ -135,7 +151,7 @@ button {
     cursor: pointer;
 }
 @media (max-width: 1000px) {
-  #nav{
+  #nav2{
     display: none !important;
   }
 }
@@ -149,10 +165,6 @@ button {
       font-size: 30%;
   }
 } */
-
-
-
-
 
 
   .row__poster {
@@ -195,7 +207,7 @@ button {
   .banner {
     background-image: url('images/banner.jpg');
     background-size: cover;
-    background-position: center center;
+    /* background-position: center center; */
     color: white;
     object-fit: contain;
     height: 448px;
@@ -251,17 +263,17 @@ button {
   
   /* nav */
   
-  .nav__logo {
+  .nav2__logo {
     width: 80px;
     object-fit: contain;
   }
   
-  .nav__avatar {
+  .nav2__avatar {
     width: 30px;
     object-fit: contain;
   }
   
-  .nav {
+  .nav2 {
     position: fixed;
     top: 0;
     width: 100%;
@@ -274,7 +286,7 @@ button {
     transition: all 0.5s;
   }
   
-  .nav__black {
+  .nav2__black {
     background-color: #111;
   }
   
